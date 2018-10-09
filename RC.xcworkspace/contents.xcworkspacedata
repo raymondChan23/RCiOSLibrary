@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RCC/RCC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RCiOSLibrary/RCiOSLibrary.xcodeproj">
    </FileRef>
    <FileRef

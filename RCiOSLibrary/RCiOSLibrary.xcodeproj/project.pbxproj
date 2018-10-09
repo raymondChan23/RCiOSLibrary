@@ -13,6 +13,8 @@
 		D1B3BFD8216C814000862C7A /* RCiOSLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3BFD7216C814000862C7A /* RCiOSLibraryTests.swift */; };
 		D1B3BFDA216C814000862C7A /* RCiOSLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B3BFCC216C814000862C7A /* RCiOSLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1CB79EE216C842F00459B81 /* RCiOSLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D1CB79ED216C842F00459B81 /* RCiOSLibrary.podspec */; };
+		D1CB79F0216C8CC400459B81 /* RCCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB79EF216C8CC400459B81 /* RCCall.swift */; };
+		D1CB79F1216C96F000459B81 /* RCCall.swift in Headers */ = {isa = PBXBuildFile; fileRef = D1CB79EF216C8CC400459B81 /* RCCall.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 		D1B3BFD7216C814000862C7A /* RCiOSLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCiOSLibraryTests.swift; sourceTree = "<group>"; };
 		D1B3BFD9216C814000862C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CB79ED216C842F00459B81 /* RCiOSLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = RCiOSLibrary.podspec; sourceTree = "<group>"; };
+		D1CB79EF216C8CC400459B81 /* RCCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCall.swift; sourceTree = "<group>"; };
 		DCEA63D46D7C9FC28A252BF1 /* Pods-RCiOSLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCiOSLibraryTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RCiOSLibraryTests/Pods-RCiOSLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1609A2E31B7F20F1B8AF74E /* Pods_RCiOSLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCiOSLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +100,7 @@
 			children = (
 				D1B3BFCC216C814000862C7A /* RCiOSLibrary.h */,
 				D1B3BFCD216C814000862C7A /* Info.plist */,
+				D1CB79EF216C8CC400459B81 /* RCCall.swift */,
 			);
 			path = RCiOSLibrary;
 			sourceTree = "<group>";
@@ -129,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B3BFDA216C814000862C7A /* RCiOSLibrary.h in Headers */,
+				D1CB79F1216C96F000459B81 /* RCCall.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +191,7 @@
 				TargetAttributes = {
 					D1B3BFC8216C814000862C7A = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 					D1B3BFD1216C814000862C7A = {
 						CreatedOnToolsVersion = 10.0;
@@ -290,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CB79F0216C8CC400459B81 /* RCCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6603D562FEF7DFB9D788592B /* Pods-RCiOSLibrary.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -447,6 +455,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RCiOSLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jetco.RCiOSLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A37985B27B2F4DB036F12F6 /* Pods-RCiOSLibrary.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -473,6 +484,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RCiOSLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCEA63D46D7C9FC28A252BF1 /* Pods-RCiOSLibraryTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBBWW8T84A;
 				INFOPLIST_FILE = RCiOSLibraryTests/Info.plist;
@@ -509,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C335DAEE874EB488AC0E5F4 /* Pods-RCiOSLibraryTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBBWW8T84A;
 				INFOPLIST_FILE = RCiOSLibraryTests/Info.plist;
