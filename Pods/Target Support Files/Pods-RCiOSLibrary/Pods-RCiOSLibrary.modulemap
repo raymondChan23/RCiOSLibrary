@@ -1,0 +1,6 @@
+framework module Pods_RCiOSLibrary {
+  umbrella header "Pods-RCiOSLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
