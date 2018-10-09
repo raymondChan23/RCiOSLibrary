@@ -12,6 +12,7 @@
 		D1B3BFD3216C814000862C7A /* RCiOSLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B3BFC9216C814000862C7A /* RCiOSLibrary.framework */; };
 		D1B3BFD8216C814000862C7A /* RCiOSLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3BFD7216C814000862C7A /* RCiOSLibraryTests.swift */; };
 		D1B3BFDA216C814000862C7A /* RCiOSLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B3BFCC216C814000862C7A /* RCiOSLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1CB79EE216C842F00459B81 /* RCiOSLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D1CB79ED216C842F00459B81 /* RCiOSLibrary.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		D1B3BFD2216C814000862C7A /* RCiOSLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCiOSLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B3BFD7216C814000862C7A /* RCiOSLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCiOSLibraryTests.swift; sourceTree = "<group>"; };
 		D1B3BFD9216C814000862C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CB79ED216C842F00459B81 /* RCiOSLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = RCiOSLibrary.podspec; sourceTree = "<group>"; };
 		DCEA63D46D7C9FC28A252BF1 /* Pods-RCiOSLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCiOSLibraryTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RCiOSLibraryTests/Pods-RCiOSLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1609A2E31B7F20F1B8AF74E /* Pods_RCiOSLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCiOSLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 		D1B3BFBF216C814000862C7A = {
 			isa = PBXGroup;
 			children = (
+				D1CB79ED216C842F00459B81 /* RCiOSLibrary.podspec */,
 				D1B3BFCB216C814000862C7A /* RCiOSLibrary */,
 				D1B3BFD6216C814000862C7A /* RCiOSLibraryTests */,
 				D1B3BFCA216C814000862C7A /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CB79EE216C842F00459B81 /* RCiOSLibrary.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,15 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RCiOSLibrary-checkManifestLockResult.txt",
 			);
@@ -252,15 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-RCiOSLibraryTests/Pods-RCiOSLibraryTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -274,15 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RCiOSLibraryTests-checkManifestLockResult.txt",
 			);
